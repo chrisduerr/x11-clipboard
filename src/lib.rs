@@ -193,6 +193,7 @@ impl Clipboard {
                         is_incr = true;
                         continue
                     } else if reply.type_() != target {
+                        println!("INVALID TARGET: {}", reply.type_());
                         // FIXME
                         //
                         // In order not to break api compatibility, we can't add a new ErrorKind.
